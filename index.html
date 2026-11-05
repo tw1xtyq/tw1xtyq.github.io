@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39;; font-src &#39;self&#39;; connect-src &#39;none&#39;; manifest-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;; require-trusted-types-for &#39;script&#39;; trusted-types &#39;none&#39;; upgrade-insecure-requests">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0e0f13">
+    <title>Skvoz: пульт для zapret, Telegram-прокси и VPN</title>
+    <meta name="description" content="Приложение для Windows: zapret, Telegram-прокси и VPN в одном окне. Сам подбирает рабочий конфиг и чинит обход. Бесплатно, открытый код.">
+    <link rel="canonical" href="https://tw1xtyq.github.io/">
+    <link rel="icon" href="/logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon-180.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Skvoz">
+    <meta property="og:title" content="Skvoz: пульт для zapret, Telegram-прокси и VPN">
+    <meta property="og:description" content="Приложение для Windows: zapret, Telegram-прокси и VPN в одном окне. Сам подбирает рабочий конфиг и чинит обход. Бесплатно, открытый код.">
+    <meta property="og:url" content="https://tw1xtyq.github.io/">
+    <meta property="og:image" content="https://tw1xtyq.github.io/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preload" href="/assets/inter-cyrillic-wght-normal-DqGufNeO.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/main-BiKpI5DV.css" integrity="sha384-gYOR4tR+DxECLUcDzY/63Vt2lnIB7W0XDzqd5/jDL5pl0zQy1sBBV1hU8kmsnh2k">
+    <script type="module" src="/assets/main-BImN2msO.js" integrity="sha384-33UPVuQ313bor5JcLnS4hQ8blPriEPeun53to2JofNAPHDtDMoPda+d2laqHSMqt"></script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skvoz","operatingSystem":"Windows 10, Windows 11","applicationCategory":"UtilitiesApplication","softwareVersion":"1.11.4","downloadUrl":"https://github.com/tw1xtyq/skvoz/releases/download/v1.11.4/Skvoz-Setup-1.11.4.exe","license":"https://opensource.org/licenses/MIT","offers":{"@type":"Offer","price":"0","priceCurrency":"RUB"}}</script></head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+  <header class="site-header" data-header>
+    <div class="container site-header-row">
+      <a class="brand" href="/" aria-label="Skvoz, на главную">
+        <img src="/logo.svg" alt="" width="30" height="30">
+        <span>Skvoz</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация" data-nav>
+        <a href="/" aria-current="page">Главная</a>
+        <a href="/guide/">Инструкция</a><a href="/faq/">Вопросы</a><a href="/changelog/">Изменения</a><a href="/security/">Безопасность</a>
+      </nav>
+      <div class="site-actions">
+        <a class="icon-btn" href="https://github.com/tw1xtyq/skvoz" target="_blank" rel="noopener noreferrer" aria-label="Skvoz на GitHub"><svg class="icon icon-fill" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></a>
+        <a class="btn btn-primary btn-sm header-cta" href="/download/">Скачать</a>
+        <button class="nav-toggle icon-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Меню" data-nav-toggle>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+  <main id="main"><section class="hero">
+    <div class="ambient" aria-hidden="true"><i class="orb orb-a"></i><i class="orb orb-b"></i><i class="grid-bg"></i></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <a class="status-chip" href="/changelog/"><i class="dot"></i>Версия 1.11.4<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <h1>Discord, YouTube и&nbsp;Telegram в&nbsp;одно нажатие</h1>
+        <p class="hero-lead">
+          Zapret, Telegram-прокси и VPN в одном окне. Skvoz сам подбирает рабочий конфиг и чинит обход, когда тот
+          перестаёт работать.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://github.com/tw1xtyq/skvoz/releases/download/v1.11.4/Skvoz-Setup-1.11.4.exe" rel="noopener noreferrer" data-download>
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7.5 11 12 15.5 16.5 11M5 20h14"/></svg><span>Скачать для Windows</span>
+  </a>
+          <a class="btn btn-secondary" href="/guide/">Как это работает</a>
+        </div>
+        <p class="hero-meta">Windows 10/11 x64 · 88 МБ · бесплатно</p>
+        <p class="os-note" data-os-note hidden>Skvoz работает только на Windows 10 и 11. Откройте сайт на компьютере с Windows.</p>
+        <ul class="perks">
+          <li class="status-chip"><i class="dot"></i>Бесплатно</li><li class="status-chip"><i class="dot"></i>Открытый код</li><li class="status-chip"><i class="dot"></i>Без телеметрии</li>
+        </ul>
+      </div>
+      <div class="hero-visual" data-demo data-live="true">
+        <div class="beam" aria-hidden="true"><i></i></div>
+        <div class="app-window" role="group" aria-label="Демонстрация интерфейса Skvoz">
+    <div class="app-titlebar">
+      <img src="/logo.svg" alt="" width="18" height="18">
+      <span>Skvoz</span>
+      <em>демо</em>
+    </div>
+    <div class="app-body">
+      <div class="app-side" aria-hidden="true">
+        <span class="is-active"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5h-5v5H5a1 1 0 0 1-1-1z"/></svg></span><span class=""><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span><span class=""><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 4.5 3.5 11l6 2.2 2.2 6.3 3.1-4 4.2 3.1z"/><path d="m9.5 13.2 6.7-5.4"/></svg></span><span class=""><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.5 5.2 3.5 8.5s-1.1 6.1-3.5 8.5c-2.4-2.4-3.5-5.2-3.5-8.5s1.1-6.1 3.5-8.5z"/></svg></span><span class=""><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></span><span class=""><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5z"/><path d="m8 10 2.5 2L8 14M12.5 14H16"/></svg></span>
+      </div>
+      <div class="app-main">
+        <div class="app-head">
+          <strong>Главная</strong>
+          <span>Zapret, Telegram-прокси и VPN в одном окне</span>
+        </div>
+        <div class="app-cards">
+          <div class="app-card" data-demo-card="bypass" data-on="true">
+              <div class="app-card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6z"/><path d="m9 12 2 2 4-4"/></svg><i class="dot"></i></div>
+              <strong>Обход</strong>
+              <small>YouTube и Discord без VPN</small>
+              <span class="app-card-state" data-demo-state>Включён</span>
+              <button type="button" class="app-btn" data-demo-toggle aria-pressed="true">
+                Выключить
+              </button>
+            </div><div class="app-card" data-demo-card="tg" data-on="true">
+              <div class="app-card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 4.5 3.5 11l6 2.2 2.2 6.3 3.1-4 4.2 3.1z"/><path d="m9.5 13.2 6.7-5.4"/></svg><i class="dot"></i></div>
+              <strong>Telegram-прокси</strong>
+              <small>Только Telegram</small>
+              <span class="app-card-state" data-demo-state>Включён</span>
+              <button type="button" class="app-btn" data-demo-toggle aria-pressed="true">
+                Выключить
+              </button>
+            </div><div class="app-card" data-demo-card="vpn" data-on="false">
+              <div class="app-card-top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.5 5.2 3.5 8.5s-1.1 6.1-3.5 8.5c-2.4-2.4-3.5-5.2-3.5-8.5s1.1-6.1 3.5-8.5z"/></svg><i class="dot"></i></div>
+              <strong>VPN</strong>
+              <small>Весь интернет через сервер</small>
+              <span class="app-card-state" data-demo-state>Выключен</span>
+              <button type="button" class="app-btn" data-demo-toggle aria-pressed="false">
+                Включить
+              </button>
+            </div>
+        </div>
+        <div class="app-access">
+          <strong>Проверка доступа</strong>
+          <div class="app-access-grid" aria-live="polite">
+            <div class="app-access-item" data-demo-access="Discord" data-on="true">
+                <i class="dot"></i><b>Discord</b><span data-demo-access-state>открывается</span>
+              </div><div class="app-access-item" data-demo-access="YouTube" data-on="true">
+                <i class="dot"></i><b>YouTube</b><span data-demo-access-state>открывается</span>
+              </div><div class="app-access-item" data-demo-access="Telegram" data-on="true">
+                <i class="dot"></i><b>Telegram</b><span data-demo-access-state>открывается</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </section><section class="section" id="features">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">Возможности</p>
+        <h2>Всё нужное в одном окне</h2>
+      </header>
+      <div class="features reveal stagger" data-spot-group>
+        <article class="card feature">
+            <span class="tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 19 6v5.5c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <h3>Обход</h3>
+            <p>Zapret без .bat-файлов и командной строки. Трафик идёт напрямую, без чужих серверов.</p>
+          </article><article class="card feature">
+            <span class="tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 4.5 3.5 11l6 2.2 2.2 6.3 3.1-4 4.2 3.1z"/><path d="m9.5 13.2 6.7-5.4"/></svg></span>
+            <h3>Telegram-прокси</h3>
+            <p>Локальный прокси на вашем компьютере. Подключается одной кнопкой.</p>
+          </article><article class="card feature">
+            <span class="tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.5 5.2 3.5 8.5s-1.1 6.1-3.5 8.5c-2.4-2.4-3.5-5.2-3.5-8.5s1.1-6.1 3.5-8.5z"/></svg></span>
+            <h3>VPN</h3>
+            <p>Бесплатный WARP с маскировкой AmneziaWG за 10–30 секунд или ваш конфиг.</p>
+          </article><article class="card feature">
+            <span class="tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></span>
+            <h3>Автоподбор</h3>
+            <p>Проверяет все конфиги и включает лучший для вашей сети.</p>
+          </article><article class="card feature">
+            <span class="tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2.5"/><path d="M4 15h16"/><circle cx="16.5" cy="17" r=".6"/></svg></span>
+            <h3>Трей</h3>
+            <p>Цветная точка на значке показывает, работает ли обход.</p>
+          </article><article class="card feature">
+            <span class="tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2.5-6 4 12 2.5-6h5"/></svg></span>
+            <h3>Проверка доступа</h3>
+            <p>Показывает, открываются ли Discord, YouTube и Telegram прямо сейчас.</p>
+          </article><article class="card feature">
+            <span class="tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5z"/><path d="m8 10 2.5 2L8 14M12.5 14H16"/></svg></span>
+            <h3>Диагностика</h3>
+            <p>Проверяет службы Windows, прокси, файлы WinDivert и конфликтующие программы.</p>
+          </article><article class="card feature">
+            <span class="tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7.5 11 12 15.5 16.5 11M5 20h14"/></svg></span>
+            <h3>Обновления</h3>
+            <p>Skvoz и zapret обновляются из приложения, ваши списки и конфиг сохраняются.</p>
+          </article>
+      </div>
+    </div>
+  </section><section class="section">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">Что выбрать</p>
+        <h2>Чем отличаются инструменты</h2>
+      </header>
+      <div class="card compare reveal">
+        <table>
+          <thead>
+            <tr><td></td><th scope="col">Обход</th><th scope="col">Telegram-прокси</th><th scope="col">VPN</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+                <th scope="row">Что открывает</th>
+                <td data-label="Обход">YouTube, Discord и сайты из ваших списков</td><td data-label="Telegram-прокси">Только Telegram</td><td data-label="VPN">Весь интернет</td>
+              </tr><tr>
+                <th scope="row">Как идёт трафик</th>
+                <td data-label="Обход">Напрямую, без чужих серверов</td><td data-label="Telegram-прокси">Через локальный прокси на вашем компьютере</td><td data-label="VPN">Через сервер VPN</td>
+              </tr><tr>
+                <th scope="row">Когда включать</th>
+                <td data-label="Обход">В первую очередь</td><td data-label="Telegram-прокси">Если не открывается Telegram</td><td data-label="VPN">Если обхода и прокси не хватает</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section><section class="section">
+    <div class="container split">
+      <div class="reveal">
+        <p class="eyebrow">Автоматика</p>
+        <h2>Сломалось? Он уже чинит</h2>
+        <ul class="ticks">
+          <li><b>Проверка каждые 30 секунд.</b> Skvoz открывает YouTube и Discord или ваши сайты и замечает даже зависшую загрузку.</li>
+          <li><b>Сам меняет конфиг.</b> Дважды перезапускает обход, затем переходит на следующий рабочий конфиг.</li>
+          <li><b>Помнит сети.</b> Дома, на работе и на точке доступа включается тот конфиг, что работал там раньше.</li>
+        </ul>
+      </div>
+      <figure class="log reveal">
+        <figcaption><span>История событий</span><em>пример</em></figcaption>
+        <ol>
+          <li data-level="ok"><time>12:04:10</time><span>YouTube и Discord открываются</span></li><li data-level="warn"><time>12:04:40</time><span>YouTube: страница зависла на загрузке</span></li><li data-level="warn"><time>12:04:41</time><span>Перезапуск winws, попытка 1 из 2</span></li><li data-level="warn"><time>12:05:12</time><span>Перезапуск winws, попытка 2 из 2</span></li><li data-level="info"><time>12:05:43</time><span>Конфиг отложен на 6 часов, включаю следующий</span></li><li data-level="ok"><time>12:06:13</time><span>YouTube и Discord снова открываются</span></li>
+        </ol>
+      </figure>
+    </div>
+  </section><section class="section">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">Начало работы</p>
+        <h2>Три шага и всё открывается</h2>
+      </header>
+      <ol class="steps reveal stagger" data-spot-group>
+        <li class="card step">
+            <span class="step-num">1</span>
+            <h3>Скачайте и запустите</h3>
+            <p>Подтвердите запрос прав администратора. Zapret поставится сам.</p>
+          </li><li class="card step">
+            <span class="step-num">2</span>
+            <h3>Подберите конфиг</h3>
+            <p>На странице «Обход» нажмите «Подобрать автоматически».</p>
+          </li><li class="card step">
+            <span class="step-num">3</span>
+            <h3>Включите</h3>
+            <p>Нажмите «Включить» на Главной. Дальше Skvoz следит за всем сам.</p>
+          </li>
+      </ol>
+      <p class="section-more"><a class="link-arrow" href="/guide/">Полная инструкция <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+    </div>
+  </section><section class="section">
+    <div class="container">
+      <div class="card trust reveal">
+        <div class="trust-head">
+          <p class="eyebrow">Безопасность</p>
+          <h2>Программа с правами администратора должна быть прозрачной</h2>
+          <a class="link-arrow" href="/security/">Что делает Skvoz и чего не делает <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="trust-grid">
+          <div><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg><h3>Открытый код</h3><p>Весь код на GitHub под лицензией MIT. Сборки создаются на GitHub Actions.</p></div><div><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l16 16M9.9 5.3A9.6 9.6 0 0 1 12 5c5 0 8.5 4.5 9.5 7a13 13 0 0 1-3 4.1M6.3 7.4A13 13 0 0 0 2.500 12c1 2.500 4.500 7 9.500 7 1.500 0 2.900-.4 4.100-1"/></svg><h3>Без телеметрии</h3><p>В приложении нет аналитики и счётчиков, а на этом сайте нет cookies и внешних запросов.</p></div><div><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="m11 12 8.500-8.500M16 7l3 3"/></svg><h3>Проверяемые файлы</h3><p>Для каждой сборки указан SHA-256, так что подлинность файла легко проверить.</p></div>
+        </div>
+      </div>
+    </div>
+  </section><section class="section">
+    <div class="container narrow">
+      <header class="section-head reveal">
+        <p class="eyebrow">Вопросы</p>
+        <h2>Что спрашивают чаще всего</h2>
+      </header>
+      <div class="faq-list reveal stagger">
+        <details class="faq-item"><summary>Что такое Skvoz?</summary><p>Приложение для Windows, которое собирает в одном окне три инструмента: zapret-discord-youtube для обхода, локальный Telegram-прокси и VPN на AmneziaWG. Вместо ручного запуска .bat-файлов вы нажимаете «Включить», а подбором конфига и восстановлением занимается приложение.</p></details><details class="faq-item"><summary>Это бесплатно?</summary><p>Да. Код открыт под лицензией MIT, рекламы и платных функций нет.</p></details><details class="faq-item"><summary>Чем обход отличается от VPN?</summary><p>Обход меняет только то, как ваши пакеты выглядят для провайдера: трафик идёт напрямую, скорость почти не страдает, но работает это для выбранных сайтов. VPN отправляет весь интернет через сервер. Telegram-прокси касается только Telegram. Обычно хватает обхода и прокси, а VPN полезен там, где они не справляются.</p></details><details class="faq-item"><summary>Почему Windows показывает предупреждение SmartScreen?</summary><p>Сборка не подписана платным сертификатом, поэтому у файла нет репутации в Windows. Нажмите «Подробнее», затем «Выполнить в любом случае». Скачивайте Skvoz только со страницы релизов на GitHub и при желании сверяйте SHA-256.</p></details>
+      </div>
+      <p class="section-more"><a class="link-arrow" href="/faq/">Все вопросы <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+    </div>
+  </section><section class="finale">
+    <div class="container">
+      <h2>Попробуйте Skvoz</h2>
+      <p>Бесплатно, без регистрации и рекламы.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://github.com/tw1xtyq/skvoz/releases/download/v1.11.4/Skvoz-Setup-1.11.4.exe" rel="noopener noreferrer" data-download>
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7.5 11 12 15.5 16.5 11M5 20h14"/></svg><span>Скачать для Windows</span>
+  </a>
+        <a class="btn btn-secondary" href="/download/">Другие варианты</a>
+      </div>
+    </div>
+  </section></main>
+  <footer class="site-footer">
+    <div class="container">
+      <a class="brand" href="/">
+        <img src="/logo.svg" alt="" width="28" height="28" loading="lazy">
+        <span>Skvoz</span>
+        <small>v1.11.4</small>
+      </a>
+      <nav aria-label="Разделы сайта">
+        <h2>Сайт</h2>
+        <a href="/download/">Скачать</a><a href="/guide/">Инструкция</a><a href="/faq/">Вопросы</a><a href="/changelog/">Изменения</a><a href="/security/">Безопасность</a>
+      </nav>
+      <nav aria-label="Проект на GitHub">
+        <h2>Проект</h2>
+        <a href="https://github.com/tw1xtyq/skvoz" target="_blank" rel="noopener noreferrer">Исходный код</a>
+        <a href="https://github.com/tw1xtyq/skvoz/releases" target="_blank" rel="noopener noreferrer">Все релизы</a>
+        <a href="https://github.com/tw1xtyq/skvoz/issues" target="_blank" rel="noopener noreferrer">Сообщить об ошибке</a>
+        <a href="https://github.com/tw1xtyq/skvoz/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">Лицензия MIT</a>
+        <a href="https://github.com/tw1xtyq/skvoz/blob/main/THIRD_PARTY_NOTICES.md" target="_blank" rel="noopener noreferrer">Сторонние проекты</a>
+      </nav>
+      <div class="site-footer-note">
+        <p>
+          Skvoz работает благодаря проектам Flowseal, bol-van, MALWARE, Amnezia VPN, ViRb3 и WireGuard LLC и не связан
+          с ними и с Cloudflare. Все товарные знаки принадлежат их владельцам. Шрифты Inter и JetBrains Mono: SIL OFL 1.1.
+        </p>
+        <p>Сайт не использует cookies, счётчики и внешние сервисы.</p>
+      </div>
+    </div>
+  </footer>
+  <a class="to-top" href="#main" aria-label="Наверх" data-to-top><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <div class="toasts" data-toasts data-guide="/guide/" role="status"></div>
+</body>
+</html>

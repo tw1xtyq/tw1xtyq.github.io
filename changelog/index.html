@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39;; font-src &#39;self&#39;; connect-src &#39;none&#39;; manifest-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;; require-trusted-types-for &#39;script&#39;; trusted-types &#39;none&#39;; upgrade-insecure-requests">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0e0f13">
+    <title>Изменения · Skvoz</title>
+    <meta name="description" content="История версий Skvoz: новые функции и исправления в каждом релизе.">
+    <link rel="canonical" href="https://tw1xtyq.github.io/changelog/">
+    <link rel="icon" href="/logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon-180.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Skvoz">
+    <meta property="og:title" content="Изменения · Skvoz">
+    <meta property="og:description" content="История версий Skvoz: новые функции и исправления в каждом релизе.">
+    <meta property="og:url" content="https://tw1xtyq.github.io/changelog/">
+    <meta property="og:image" content="https://tw1xtyq.github.io/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preload" href="/assets/inter-cyrillic-wght-normal-DqGufNeO.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/main-BiKpI5DV.css" integrity="sha384-gYOR4tR+DxECLUcDzY/63Vt2lnIB7W0XDzqd5/jDL5pl0zQy1sBBV1hU8kmsnh2k">
+    <script type="module" src="/assets/main-BImN2msO.js" integrity="sha384-33UPVuQ313bor5JcLnS4hQ8blPriEPeun53to2JofNAPHDtDMoPda+d2laqHSMqt"></script>
+    </head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+  <header class="site-header" data-header>
+    <div class="container site-header-row">
+      <a class="brand" href="/" aria-label="Skvoz, на главную">
+        <img src="/logo.svg" alt="" width="30" height="30">
+        <span>Skvoz</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация" data-nav>
+        <a href="/">Главная</a>
+        <a href="/guide/">Инструкция</a><a href="/faq/">Вопросы</a><a href="/changelog/" aria-current="page">Изменения</a><a href="/security/">Безопасность</a>
+      </nav>
+      <div class="site-actions">
+        <a class="icon-btn" href="https://github.com/tw1xtyq/skvoz" target="_blank" rel="noopener noreferrer" aria-label="Skvoz на GitHub"><svg class="icon icon-fill" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></a>
+        <a class="btn btn-primary btn-sm header-cta" href="/download/">Скачать</a>
+        <button class="nav-toggle icon-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Меню" data-nav-toggle>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+  <main id="main"><div class="page-head container narrow">
+      <p class="eyebrow">Изменения</p>
+      <h1>Что нового</h1>
+      <p class="lead">Страница собирается из релизов на GitHub.</p>
+    </div>
+    <div class="container narrow timeline">
+      <details class="release" id="v1.11.4" open>
+          <summary>
+            <h2>1.11.4</h2>
+            <span class="badge">Последняя</span>
+            <time datetime="2026-11-05T17:59:44Z">5 ноября 2026 г.</time>
+          </summary>
+          <div class="release-body">
+            <div class="prose release-notes"><h3>Исправления</h3><ul>
+<li><strong>Установка zapret:</strong> больше нет ошибки <code>tar: Cannot connect to C: resolve failed</code>. Она появлялась, если на ПК установлен Git или MSYS и основной способ распаковки не сработал</li>
+<li><strong>Понятные ошибки распаковки:</strong> Skvoz называет причину сбоя обоих способов, а текст PowerShell читается без кракозябр</li>
+<li><strong>Отчёт:</strong> ошибки и предупреждения теперь сохраняются и попадают в отчёт даже после перезапуска Skvoz</li>
+</ul>
+</div>
+            <a href="https://github.com/tw1xtyq/skvoz/releases/tag/v1.11.4" target="_blank" rel="noopener noreferrer">Файлы этой версии</a>
+          </div>
+        </details><details class="release" id="v1.11.3">
+          <summary>
+            <h2>1.11.3</h2>
+            
+            <time datetime="2026-11-05T09:46:47Z">5 ноября 2026 г.</time>
+          </summary>
+          <div class="release-body">
+            <div class="prose release-notes"><h3>Новое</h3><ul>
+<li>Zapret теперь внутри Skvoz и ставится без GitHub. Новые версии по-прежнему скачиваются</li>
+<li>Кнопка <strong>«Установить zapret»</strong> на карточке Главной и на странице Обхода</li>
+<li>Интерфейс проще: одно название у каждой функции, кнопки «Включить» и «Выключить», на Главной подписано, что для чего. «Сервис» теперь называется <strong>«Помощь»</strong></li>
+<li><strong>«Подключить Telegram»</strong> включает прокси и сразу открывает Telegram</li>
+</ul>
+<h3>Исправления</h3><ul>
+<li><strong>Telegram:</strong> файлы с CDN больше не уходят на неверный сервер, резервные маршруты проверяются параллельно, журнал не забивается повторами</li>
+<li><strong>Проверка обхода:</strong> сайт проверяется повторно, а сообщение называет, что не открылось. Меньше лишних перезапусков и смен конфига</li>
+<li><strong>Статус:</strong> на русской Windows службы zapret и WinDivert определяются верно, показывается настоящий конфиг</li>
+<li><strong>Запуск:</strong> если winws падает сразу, Skvoz показывает причину, а не «Обход запущен»</li>
+<li><strong>Игровой фильтр</strong> читает настройки, сохранённые через <code>service.bat</code></li>
+<li><strong>Автоустановка zapret</strong> срабатывает после переустановки Skvoz и если антивирус удалил <code>winws.exe</code></li>
+<li><strong>Telegram-прокси:</strong> при занятом порте статус больше не показывает «включён», а ошибка называет причину</li>
+</ul>
+</div>
+            <a href="https://github.com/tw1xtyq/skvoz/releases/tag/v1.11.3" target="_blank" rel="noopener noreferrer">Файлы этой версии</a>
+          </div>
+        </details><details class="release" id="v1.11.2">
+          <summary>
+            <h2>1.11.2</h2>
+            
+            <time datetime="2026-11-05T06:50:49Z">5 ноября 2026 г.</time>
+          </summary>
+          <div class="release-body">
+            <div class="prose release-notes"><h3>Исправления</h3><ul>
+<li><strong>Zapret надёжнее скачивается.</strong> Приложение теперь учитывает системный прокси и сертификаты Windows, поэтому загрузке не мешают прокси и антивирусы с проверкой HTTPS</li>
+<li><strong>Лимит GitHub больше не мешает установке.</strong> Если GitHub ограничил запросы с вашего IP, версия определяется другим способом</li>
+<li><strong>Обрывы связи.</strong> Зависшая загрузка прерывается и повторяется до трёх раз, а обрезанный или повреждённый архив не устанавливается</li>
+<li><strong>Понятные ошибки.</strong> Вместо <code>fetch failed</code> приложение называет причину: DNS, прокси, сертификат, блокировка у провайдера или лимит GitHub. Если скачать не получается, оно подскажет, как поставить zapret вручную</li>
+<li><strong>Кнопки не блокируются у администратора.</strong> Если в Windows отключена служба «Сервер», Skvoz считал, что прав нет, и отключал «Старт» и другие функции</li>
+<li><strong>Файлы, удалённые антивирусом.</strong> Если после распаковки нет <code>winws.exe</code> или WinDivert, Skvoz сообщит об этом и не тронет рабочую установку</li>
+<li><strong>Приложение не падает при ошибке записи файла,</strong> например когда файл блокирует антивирус. Это касается и обновления самого Skvoz</li>
+<li><strong>Установка работает без <code>Expand-Archive</code>:</strong> архив распакуется через <code>tar</code>, а сбой разблокировки файлов больше не прерывает установку</li>
+<li><strong>Работа с обрезанным PATH.</strong> Системные команды находятся, даже если из PATH пропала папка <code>System32</code></li>
+<li><strong>В «Отчёт» попадает причина сбоя загрузки.</strong> Если zapret не ставится, приложите этот файл к баг-репорту</li>
+</ul>
+</div>
+            <a href="https://github.com/tw1xtyq/skvoz/releases/tag/v1.11.2" target="_blank" rel="noopener noreferrer">Файлы этой версии</a>
+          </div>
+        </details><details class="release" id="v1.11.1">
+          <summary>
+            <h2>1.11.1</h2>
+            
+            <time datetime="2026-11-03T22:05:00Z">3 ноября 2026 г.</time>
+          </summary>
+          <div class="release-body">
+            <div class="prose release-notes"><h3>Новое</h3><ul>
+<li><strong>Страница «О Skvoz»</strong> (Ctrl+7). Версия, релизы, инструкция, а также авторы и лицензии теперь на отдельной странице. На «Сервисе» осталось рабочее: инструменты, журнал и удаление</li>
+<li><strong>Короткие подписи в шапке:</strong> «Обход · Telegram · VPN». Состояние показывает точка, подробности — во всплывающей подсказке</li>
+</ul>
+<h3>Исправления</h3><ul>
+<li><strong>Карточки «Инструментов» и «Удаления» нажимаются целиком.</strong> Раньше срабатывало только нажатие точно по тексту: при нажатии кнопка сжималась, и клик по остальной карточке терялся. Заодно пропало дёрганье текста при нажатии</li>
+<li><strong>«Удалить службы»</strong> оформлена так же, как «Удалить с ПК», и не показывает отдельную плашку внутри карточки при наведении</li>
+<li>Вкладки настроек при нажатии сжимаются плавно, а не рывком</li>
+</ul>
+</div>
+            <a href="https://github.com/tw1xtyq/skvoz/releases/tag/v1.11.1" target="_blank" rel="noopener noreferrer">Файлы этой версии</a>
+          </div>
+        </details><details class="release" id="v1.11.0">
+          <summary>
+            <h2>1.11.0</h2>
+            
+            <time datetime="2026-11-03T21:31:59Z">3 ноября 2026 г.</time>
+          </summary>
+          <div class="release-body">
+            <div class="prose release-notes"><h3>Новое: обход сам чинит себя</h3><ul>
+<li><strong>Проверяет настоящие сайты.</strong> Раз в 30 секунд Skvoz открывает YouTube и Discord через обход. Он замечает не только обрыв соединения, но и «заморозку», когда страница начинает грузиться и встаёт на первых килобайтах</li>
+<li><strong>Сам переключает конфиг.</strong> Если сайты перестали открываться, Skvoz дважды перезапускает winws, потом переходит на следующий рабочий конфиг из последней проверки. Сломанный конфиг откладывается на 6 часов. Если запасные закончились, Skvoz быстро подбирает новый. Без интернета и сразу после сна ложных переключений нет</li>
+<li><strong>Помнит конфиг для каждой сети.</strong> Дома, на работе и на телефонной точке доступа могут работать разные конфиги. При смене сети Skvoz включает тот, что работал там в прошлый раз</li>
+<li><strong>Перепроверяет конфиги в простое.</strong> Раз в 3 дня, когда компьютер 10 минут никто не трогает и он работает от сети, Skvoz заново проверяет конфиги и переходит на лучший. Если идёт видео или игра, перепроверка ждёт. Стоит пошевелить мышью, и она останавливается</li>
+<li><strong>После обновления zapret</strong> рейтинг конфигов сбрасывается: старые оценки относились к прежним .bat</li>
+<li><strong>История событий.</strong> На странице «Обход» видно, с какого времени и на каком конфиге работает обход, а также последние сбои, перезапуски и переключения</li>
+<li><strong>Свои сайты для проверки.</strong> Можно указать до 5 сайтов, по которым сторож решает, работает ли обход</li>
+</ul>
+<h3>Настройки и страницы по местам</h3><ul>
+<li><strong>Один раздел «Настройки» с вкладками:</strong> Запуск, Автоматика, Фильтры, Свои списки, Обновления. Вкладки «Авто» и «Фильтры» в меню больше нет</li>
+<li><strong>«Обновления» в одном месте:</strong> версии Skvoz и zapret, проверка и обновление, автообновление zapret, обновление hosts и списка IPSet</li>
+<li><strong>Кнопка включения на каждой странице.</strong> На страницах «Обход», «Telegram» и «VPN» сверху состояние и своя кнопка «Запустить»/«Остановить». Раньше включить можно было только с Главной или из трея</li>
+<li><strong>Папка zapret</strong> переехала вниз страницы «Обход», чтобы не мешать</li>
+<li><strong>Удаление отдельно.</strong> «Удалить службы» и «Удалить с ПК» вынесены на «Сервисе» в отдельную карточку, подальше от «Диагностики»</li>
+<li>Горячие клавиши теперь Ctrl+1…6</li>
+</ul>
+<h3>Трей</h3><ul>
+<li><strong>Цветная точка на значке:</strong> зелёная — сайты открываются, жёлтая — обход восстанавливается, красная — не работает</li>
+<li><strong>Меню по правому клику:</strong> состояние обхода и сеть, подменю «Конфиг» для смены одним кликом, пункты «Настройки» и «Журнал и диагностика»</li>
+<li><strong>Мини-окно:</strong> состояние сторожа, сеть, время запуска обхода и кнопка настроек</li>
+</ul>
+<h3>Установщик</h3><ul>
+<li>Установщик на русском, с оформлением в стиле Skvoz и кнопкой «Запустить Skvoz» в конце</li>
+<li>Zapret теперь скачивается в <code>C:\ProgramData\Skvoz</code>, а не внутрь папки программы, поэтому обновление Skvoz его больше не стирает. Уже скачанный zapret найдётся сам</li>
+<li>При удалении Skvoz спрашивает, удалить ли и настройки. По умолчанию они остаются</li>
+</ul>
+<h3>Исправления</h3><ul>
+<li>Кнопки иногда не нажимались: после ошибки загрузки или во время фонового обновления zapret интерфейс оставался заблокированным. Если кнопку нажать, пока идёт другая операция, теперь появляется подсказка, чего ждать</li>
+<li>Плашка «Обход выключен» в шапке не открывала страницу «Обход»</li>
+<li>Переключатели настроек иногда сбивались после ошибки, теперь возвращаются в прежнее положение</li>
+<li>Диагностика писала «Не удалось удалить WinDivert», хотя драйвер уже был удалён. Теперь она проверяет, кто держит драйвер, и пишет, что делать</li>
+<li><strong>Отчёт для баг-репорта:</strong> «Сервис → Отчёт» сохраняет файл с настройками, рейтингом конфигов, историей и журналом. Имя пользователя и путь к домашней папке в нём скрыты</li>
+</ul>
+</div>
+            <a href="https://github.com/tw1xtyq/skvoz/releases/tag/v1.11.0" target="_blank" rel="noopener noreferrer">Файлы этой версии</a>
+          </div>
+        </details><details class="release" id="v1.10.1">
+          <summary>
+            <h2>1.10.1</h2>
+            
+            <time datetime="2026-11-03T00:27:11Z">3 ноября 2026 г.</time>
+          </summary>
+          <div class="release-body">
+            <div class="prose release-notes"><h3>Новое: VPN прямо в Skvoz</h3><ul>
+<li><strong>Вкладка VPN на AmneziaWG.</strong> Ничего ставить не нужно: AmneziaWG и драйвер Wintun уже внутри Skvoz</li>
+<li><strong>Бесплатный VPN одной кнопкой.</strong> «Создать и подключить» регистрирует Cloudflare WARP с маскировкой AmneziaWG, сам находит рабочий сервер и подключается. Обычно хватает 10–30 секунд</li>
+<li><strong>Генератор не устаревает.</strong> Параметры маскировки Skvoz сверяет с <a href="https://github.com/ImMALWARE/bash-warp-generator" rel="noopener noreferrer" target="_blank">bash-warp-generator</a> раз в 12 часов. Если Cloudflare не даёт зарегистрироваться напрямую, используется <a href="https://github.com/ViRb3/wgcf" rel="noopener noreferrer" target="_blank">wgcf</a>, он обновляется сам</li>
+<li><strong>Работает при блокировке РКН.</strong> Если запрос регистрации не проходит, Skvoz на время включает обход zapret и потом выключает его обратно. Если и так не вышло, на вкладке VPN есть пошаговая подсказка, как создать конфиг в GitHub Codespaces</li>
+<li><strong>Свой конфиг.</strong> Можно открыть .conf от любого сервера AmneziaWG или WireGuard, вставить его текстом или сохранить текущий конфиг в файл, например чтобы перенести на телефон</li>
+<li>VPN включается на Главной, из трея и автоматически при запуске (вкладка «Авто»)</li>
+</ul>
+<h3>Дизайн 2.0</h3><ul>
+<li>Спокойная тёмная тема: сплошные карточки вместо стекла и свечения, один акцентный цвет</li>
+<li>В шапке видно состояние обхода, Telegram и VPN; клик открывает нужную вкладку</li>
+<li>Текст крупнее: ничего мельче 12px, заголовки карточек читаются</li>
+<li>Карточки «О программе» и «Авторы и лицензии» больше не обрезают текст</li>
+<li>Настройки, заблокированные во время работы обхода, не выглядят сломанными: рядом плашка с замком и объяснением</li>
+<li>Кнопки «Остановить» на Главной нейтральные и краснеют только при наведении</li>
+</ul>
+<h3>Авторы и лицензии</h3><ul>
+<li>На вкладке «Сервис» появились ссылки на все проекты, на которых построен Skvoz</li>
+<li>Тексты лицензий лежат в папке программы <code>resources\licenses</code>, сводка — в <a href="https://github.com/tw1xtyq/skvoz/blob/main/THIRD_PARTY_NOTICES.md" rel="noopener noreferrer" target="_blank">THIRD_PARTY_NOTICES.md</a></li>
+</ul>
+</div>
+            <a href="https://github.com/tw1xtyq/skvoz/releases/tag/v1.10.1" target="_blank" rel="noopener noreferrer">Файлы этой версии</a>
+          </div>
+        </details><details class="release" id="v1.9.5">
+          <summary>
+            <h2>1.9.5</h2>
+            
+            <time datetime="2026-10-31T23:14:46Z">31 октября 2026 г.</time>
+          </summary>
+          <div class="release-body">
+            <div class="prose release-notes"><h3>Исправлено</h3><ul>
+<li><strong>Анимация мини-окна в трее:</strong> при открытии больше не мелькает прошлый кадр — окно проявляется плавно и сразу с актуальным состоянием</li>
+</ul>
+<h3>Дизайн</h3><ul>
+<li>Настройки в стиле Windows 11: описание слева, переключатель справа, строки разделены тонкими линиями</li>
+<li>«Игровой фильтр» оформлен так же, как IPSet, — одна строка с выбором справа</li>
+<li>Проверка доступа при открытии, понятная плашка статуса, Главная без дублей меню, контрастнее поясняющий текст</li>
+</ul>
+</div>
+            <a href="https://github.com/tw1xtyq/skvoz/releases/tag/v1.9.5" target="_blank" rel="noopener noreferrer">Файлы этой версии</a>
+          </div>
+        </details>
+      <p class="section-more"><a href="https://github.com/tw1xtyq/skvoz/releases" target="_blank" rel="noopener noreferrer">Все релизы на GitHub</a></p>
+    </div></main>
+  <footer class="site-footer">
+    <div class="container">
+      <a class="brand" href="/">
+        <img src="/logo.svg" alt="" width="28" height="28" loading="lazy">
+        <span>Skvoz</span>
+        <small>v1.11.4</small>
+      </a>
+      <nav aria-label="Разделы сайта">
+        <h2>Сайт</h2>
+        <a href="/download/">Скачать</a><a href="/guide/">Инструкция</a><a href="/faq/">Вопросы</a><a href="/changelog/">Изменения</a><a href="/security/">Безопасность</a>
+      </nav>
+      <nav aria-label="Проект на GitHub">
+        <h2>Проект</h2>
+        <a href="https://github.com/tw1xtyq/skvoz" target="_blank" rel="noopener noreferrer">Исходный код</a>
+        <a href="https://github.com/tw1xtyq/skvoz/releases" target="_blank" rel="noopener noreferrer">Все релизы</a>
+        <a href="https://github.com/tw1xtyq/skvoz/issues" target="_blank" rel="noopener noreferrer">Сообщить об ошибке</a>
+        <a href="https://github.com/tw1xtyq/skvoz/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">Лицензия MIT</a>
+        <a href="https://github.com/tw1xtyq/skvoz/blob/main/THIRD_PARTY_NOTICES.md" target="_blank" rel="noopener noreferrer">Сторонние проекты</a>
+      </nav>
+      <div class="site-footer-note">
+        <p>
+          Skvoz работает благодаря проектам Flowseal, bol-van, MALWARE, Amnezia VPN, ViRb3 и WireGuard LLC и не связан
+          с ними и с Cloudflare. Все товарные знаки принадлежат их владельцам. Шрифты Inter и JetBrains Mono: SIL OFL 1.1.
+        </p>
+        <p>Сайт не использует cookies, счётчики и внешние сервисы.</p>
+      </div>
+    </div>
+  </footer>
+  <a class="to-top" href="#main" aria-label="Наверх" data-to-top><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <div class="toasts" data-toasts data-guide="/guide/" role="status"></div>
+</body>
+</html>

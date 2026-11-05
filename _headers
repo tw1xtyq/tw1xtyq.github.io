@@ -1,0 +1,11 @@
+# Для хостингов с настройкой заголовков: Cloudflare Pages, Netlify.
+# GitHub Pages этот файл игнорирует. Основная CSP задана в самих страницах.
+/*
+  Content-Security-Policy: frame-ancestors 'none'
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()

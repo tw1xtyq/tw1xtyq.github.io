@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39;; font-src &#39;self&#39;; connect-src &#39;none&#39;; manifest-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;; require-trusted-types-for &#39;script&#39;; trusted-types &#39;none&#39;; upgrade-insecure-requests">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0e0f13">
+    <title>Безопасность · Skvoz</title>
+    <meta name="description" content="Что делает Skvoz на компьютере, какие данные не собирает, с какими сервисами соединяется и как защищён этот сайт.">
+    <link rel="canonical" href="https://tw1xtyq.github.io/security/">
+    <link rel="icon" href="/logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon-180.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Skvoz">
+    <meta property="og:title" content="Безопасность · Skvoz">
+    <meta property="og:description" content="Что делает Skvoz на компьютере, какие данные не собирает, с какими сервисами соединяется и как защищён этот сайт.">
+    <meta property="og:url" content="https://tw1xtyq.github.io/security/">
+    <meta property="og:image" content="https://tw1xtyq.github.io/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preload" href="/assets/inter-cyrillic-wght-normal-DqGufNeO.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/main-BiKpI5DV.css" integrity="sha384-gYOR4tR+DxECLUcDzY/63Vt2lnIB7W0XDzqd5/jDL5pl0zQy1sBBV1hU8kmsnh2k">
+    <script type="module" src="/assets/main-BImN2msO.js" integrity="sha384-33UPVuQ313bor5JcLnS4hQ8blPriEPeun53to2JofNAPHDtDMoPda+d2laqHSMqt"></script>
+    </head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+  <header class="site-header" data-header>
+    <div class="container site-header-row">
+      <a class="brand" href="/" aria-label="Skvoz, на главную">
+        <img src="/logo.svg" alt="" width="30" height="30">
+        <span>Skvoz</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация" data-nav>
+        <a href="/">Главная</a>
+        <a href="/guide/">Инструкция</a><a href="/faq/">Вопросы</a><a href="/changelog/">Изменения</a><a href="/security/" aria-current="page">Безопасность</a>
+      </nav>
+      <div class="site-actions">
+        <a class="icon-btn" href="https://github.com/tw1xtyq/skvoz" target="_blank" rel="noopener noreferrer" aria-label="Skvoz на GitHub"><svg class="icon icon-fill" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></a>
+        <a class="btn btn-primary btn-sm header-cta" href="/download/">Скачать</a>
+        <button class="nav-toggle icon-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Меню" data-nav-toggle>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+  <main id="main"><div class="page-head container narrow">
+      <p class="eyebrow">Безопасность</p>
+      <h1>Что Skvoz делает на вашем компьютере</h1>
+      <p class="lead">Программе с правами администратора нужно доверять. Здесь написано, на чём это доверие держится и где его границы.</p>
+    </div>
+    <div class="container narrow prose">
+      <section>
+        <h2>Какие данные собирает приложение</h2>
+        <p>
+          Никаких: в Skvoz нет телеметрии, аналитики и учётных записей. Настройки хранятся только на вашем компьютере.
+          Отчёт для баг-репорта создаётся по вашей команде, сохраняется файлом и никуда не отправляется сам. Имя
+          пользователя и домашняя папка в нём скрыты.
+        </p>
+      </section>
+      <section>
+        <h2>С чем соединяется приложение</h2>
+        <dl class="paths">
+          <div><dt>GitHub</dt><dd>Обновления Skvoz и zapret, актуальные списки и параметры</dd></div><div><dt>Cloudflare</dt><dd>Только если вы создаёте бесплатный VPN на WARP</dd></div><div><dt>YouTube, Discord, Google, Telegram</dt><dd>Проверка, открываются ли сайты</dd></div><div><dt>Ваши сайты</dt><dd>Если вы указали их для проверки в настройках</dd></div>
+        </dl>
+        <p>Это можно проверить: <a href="https://github.com/tw1xtyq/skvoz" target="_blank" rel="noopener noreferrer">весь исходный код открыт</a>.</p>
+      </section>
+      <section>
+        <h2>Зачем права администратора</h2>
+        <p>
+          Обход работает через драйвер WinDivert, который перехватывает сетевые пакеты, а VPN создаёт сетевой адаптер и
+          службу Windows. Без прав администратора система этого не разрешит.
+        </p>
+      </section>
+      <section>
+        <h2>Откуда берутся сборки и компоненты</h2>
+        <ul class="ticks">
+          <li>Релизы собираются на GitHub Actions из открытого кода, а у каждого файла есть <a href="/download/">SHA-256</a>.</li>
+          <li>Zapret и другие компоненты используются без изменений. Их авторы и лицензии перечислены в <a href="https://github.com/tw1xtyq/skvoz/blob/main/THIRD_PARTY_NOTICES.md" target="_blank" rel="noopener noreferrer">списке сторонних проектов</a>.</li>
+          <li>Skvoz сверяет SHA-256 при обновлении wgcf, запасного инструмента регистрации WARP.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Что важно понимать</h2>
+        <ul class="ticks ticks-warn">
+          <li><b>Сборки не подписаны.</b> Поэтому появляется SmartScreen, а файл стоит проверять по SHA-256.</li>
+          <li><b>Обход не шифрует трафик и не скрывает вас.</b> Он только меняет то, как пакеты выглядят для провайдера.</li>
+          <li><b>VPN передаёт трафик через сервер.</b> Вы доверяете его владельцу: Cloudflare для WARP или тому, кто выдал ваш конфиг.</li>
+          <li><b>Регистрация WARP неофициальная.</b> Cloudflare может её ограничить.</li>
+          <li><b>Skvoz не связан с авторами компонентов и с Cloudflare.</b> Это независимый проект.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Как устроен этот сайт</h2>
+        <ul class="ticks">
+          <li>Это статические файлы: сервера приложений, базы данных, форм и учётных записей нет, поэтому украсть здесь нечего.</li>
+          <li>Нет cookies, счётчиков и рекламы. Шрифты лежат на самом сайте, браузер не обращается к сторонним сервисам.</li>
+          <li>Строгая политика CSP запрещает внешние скрипты, инлайн-код и сетевые запросы из страниц.</li>
+          <li>Ссылки на файлы проверяются при сборке: на страницу попадают только адреса релизов репозитория Skvoz.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Нашли уязвимость?</h2>
+        <p>Не публикуйте её в открытом доступе. Сообщите через <a href="https://github.com/tw1xtyq/skvoz/security" target="_blank" rel="noopener noreferrer">раздел Security на GitHub</a>.</p>
+      </section>
+    </div></main>
+  <footer class="site-footer">
+    <div class="container">
+      <a class="brand" href="/">
+        <img src="/logo.svg" alt="" width="28" height="28" loading="lazy">
+        <span>Skvoz</span>
+        <small>v1.11.4</small>
+      </a>
+      <nav aria-label="Разделы сайта">
+        <h2>Сайт</h2>
+        <a href="/download/">Скачать</a><a href="/guide/">Инструкция</a><a href="/faq/">Вопросы</a><a href="/changelog/">Изменения</a><a href="/security/">Безопасность</a>
+      </nav>
+      <nav aria-label="Проект на GitHub">
+        <h2>Проект</h2>
+        <a href="https://github.com/tw1xtyq/skvoz" target="_blank" rel="noopener noreferrer">Исходный код</a>
+        <a href="https://github.com/tw1xtyq/skvoz/releases" target="_blank" rel="noopener noreferrer">Все релизы</a>
+        <a href="https://github.com/tw1xtyq/skvoz/issues" target="_blank" rel="noopener noreferrer">Сообщить об ошибке</a>
+        <a href="https://github.com/tw1xtyq/skvoz/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">Лицензия MIT</a>
+        <a href="https://github.com/tw1xtyq/skvoz/blob/main/THIRD_PARTY_NOTICES.md" target="_blank" rel="noopener noreferrer">Сторонние проекты</a>
+      </nav>
+      <div class="site-footer-note">
+        <p>
+          Skvoz работает благодаря проектам Flowseal, bol-van, MALWARE, Amnezia VPN, ViRb3 и WireGuard LLC и не связан
+          с ними и с Cloudflare. Все товарные знаки принадлежат их владельцам. Шрифты Inter и JetBrains Mono: SIL OFL 1.1.
+        </p>
+        <p>Сайт не использует cookies, счётчики и внешние сервисы.</p>
+      </div>
+    </div>
+  </footer>
+  <a class="to-top" href="#main" aria-label="Наверх" data-to-top><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <div class="toasts" data-toasts data-guide="/guide/" role="status"></div>
+</body>
+</html>
