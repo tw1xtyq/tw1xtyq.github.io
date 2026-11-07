@@ -51,10 +51,32 @@
       <p class="lead">Страница собирается из релизов на GitHub.</p>
     </div>
     <div class="container narrow timeline">
-      <details class="release" id="v1.11.4" open>
+      <details class="release" id="v1.11.5" open>
+          <summary>
+            <h2>1.11.5</h2>
+            <span class="badge">Последняя</span>
+            <time datetime="2026-11-06T19:27:42Z">6 ноября 2026 г.</time>
+          </summary>
+          <div class="release-body">
+            <div class="prose release-notes"><h3>Новое</h3><ul>
+<li>Ссылка на сайт на странице «О Skvoz»</li>
+<li>Плавные анимации: разделы появляются со стороны перехода, плашка переезжает между вкладками настроек, блоки «Подробнее» раскрываются мягко, кнопки отвечают волной, плитки подсвечиваются за курсором, при запуске обхода от кнопки расходится круг</li>
+</ul>
+<h3>Исправления</h3><ul>
+<li><strong>IPSet:</strong> переключение между режимами больше не теряет список и не выдаёт ошибку про резервную копию. Если список уже потерян, Skvoz скачает его при выборе режима</li>
+<li><strong>Обновление списка IPSet:</strong> пустой или испорченный ответ не записывается, а режим не меняется сам</li>
+<li><strong>Обновление zapret:</strong> режим IPSet сохраняется, а выключенная проверка обновлений в <code>.bat</code> больше не включается сама</li>
+<li><strong>Версии с буквой:</strong> релизы вида <code>1.9.9d</code> читаются и сравниваются верно, без постоянной переустановки</li>
+<li><strong>Проверка обновлений:</strong> при недоступном GitHub окно честно пишет, что проверить не удалось</li>
+<li><strong>Игровой фильтр:</strong> свои диапазоны портов из <code>service.bat</code> работают и не стираются, неверные заменяются стандартным</li>
+</ul>
+</div>
+            <a href="https://github.com/tw1xtyq/skvoz/releases/tag/v1.11.5" target="_blank" rel="noopener noreferrer">Файлы этой версии</a>
+          </div>
+        </details><details class="release" id="v1.11.4">
           <summary>
             <h2>1.11.4</h2>
-            <span class="badge">Последняя</span>
+            
             <time datetime="2026-11-05T17:59:44Z">5 ноября 2026 г.</time>
           </summary>
           <div class="release-body">
@@ -232,7 +254,7 @@
       <a class="brand" href="/">
         <img src="/logo.svg" alt="" width="28" height="28" loading="lazy">
         <span>Skvoz</span>
-        <small>v1.11.4</small>
+        <small>v1.11.5</small>
       </a>
       <nav aria-label="Разделы сайта">
         <h2>Сайт</h2>
