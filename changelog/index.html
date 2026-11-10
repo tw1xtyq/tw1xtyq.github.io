@@ -51,10 +51,28 @@
       <p class="lead">Страница собирается из релизов на GitHub.</p>
     </div>
     <div class="container narrow timeline">
-      <details class="release" id="v1.11.7" open>
+      <details class="release" id="v1.11.8" open>
+          <summary>
+            <h2>1.11.8</h2>
+            <span class="badge">Последняя</span>
+            <time datetime="2026-11-10T20:21:28Z">10 ноября 2026 г.</time>
+          </summary>
+          <div class="release-body">
+            <div class="prose release-notes"><h3>Исправлено</h3><ul>
+<li>Ошибка «Файл занят» при скачивании zapret. Установка больше не срывается, если временные файлы ещё держит антивирус: zapret уже на месте, а временная папка уберётся позже</li>
+<li>Перед заменой папки zapret Skvoz выгружает драйвер WinDivert: он оставался загруженным после выхода winws и не давал удалить старые файлы</li>
+<li>Если старую папку zapret освободить не удаётся, новая версия ставится рядом (например, «…-1.10.4-2»), и Skvoz переключается на неё</li>
+<li>Недоудалённые остатки прошлых установок (<code>.retired-…</code>, <code>zapret-download-…</code>) теперь убираются</li>
+<li>В окне ошибки показывается настоящее имя занятого файла, а не одна кавычка</li>
+<li>Служебные строки фоновой перепроверки больше не попадают в журнал как предупреждения</li>
+</ul>
+</div>
+            <a href="https://github.com/tw1xtyq/skvoz/releases/tag/v1.11.8" target="_blank" rel="noopener noreferrer">Файлы этой версии</a>
+          </div>
+        </details><details class="release" id="v1.11.7">
           <summary>
             <h2>1.11.7</h2>
-            <span class="badge">Последняя</span>
+            
             <time datetime="2026-11-07T20:33:33Z">7 ноября 2026 г.</time>
           </summary>
           <div class="release-body">
@@ -297,7 +315,7 @@
       <a class="brand" href="/">
         <img src="/logo.svg" alt="" width="28" height="28" loading="lazy">
         <span>Skvoz</span>
-        <small>v1.11.7</small>
+        <small>v1.11.8</small>
       </a>
       <nav aria-label="Разделы сайта">
         <h2>Сайт</h2>
